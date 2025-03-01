@@ -7,7 +7,7 @@ app = func.FunctionApp()
 @app.blob_trigger(arg_name="myblob", path="mycontainer",
                   connection="charan1_STORAGE") 
 def blob_trigger(myblob: func.InputStream):
-    file_name = myblob.name
+    file_name = myblob.blob_name
     file_extension = os.path.splitext(file_name)[1].lower()  # Extract file extension
 
     if file_extension:  # If the file has an extension
