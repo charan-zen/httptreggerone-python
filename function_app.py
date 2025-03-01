@@ -4,7 +4,7 @@ import os
 
 app = func.FunctionApp()
 
-@app.blob_trigger(arg_name="myblob", path="mycontainer",
+@app.blob_trigger(arg_name="myblob", path="zen-charan-blob-test",
                   connection="charan1_STORAGE") 
 def blob_trigger(myblob: func.InputStream):
     file_name = myblob.blob_name
