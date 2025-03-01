@@ -3,7 +3,7 @@ name: azure-functions-charan123
 on: workflow_dispatch # Allows manual trigger
 
 env:
-  AZURE_FUNCTIONAPP_NAME: "zencharanapi" # Ensure the app name is lowercase
+  AZURE_FUNCTIONAPP_NAME: "httptreggerone---python-blobrec" # Ensure the app name is lowercase
   AZURE_FUNCTIONAPP_PACKAGE_PATH: "." # Path to your function app project
   PYTHON_VERSION: "3.11" # Ensure this matches your local Python version
 
